@@ -1,8 +1,20 @@
+"use client"
 import Link from "next/link";
 
 export default function Footer() {
   return (
      <footer className="bg-stone-900 text-stone-300 py-12 border-t-4 border-amber-600">
+      {/* Back to Top */}
+      <div className="fixed bottom-8 right-8">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="bg-gradient-to-r from-amber-600 to-orange-600 text-white p-4 rounded-full shadow-2xl hover:from-amber-700 hover:to-orange-700 transition-all transform hover:scale-110"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      </div>
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

@@ -10,6 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <Header />
           <main className="flex-1 container mx-auto p-4">{children}</main>
+          
           <Footer />
         </CartProvider>
       </body>
